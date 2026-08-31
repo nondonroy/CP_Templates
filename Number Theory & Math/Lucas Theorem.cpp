@@ -1,5 +1,5 @@
 // nCr mod Prime
-//M is Prime
+// M is Prime
 #define ll long long int
 ll lucas(ll n, ll r) {
     ll ans = 1;
