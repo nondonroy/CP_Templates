@@ -47,5 +47,3 @@ void solve() {
     timer = 0;
     bridges.clear();
 }
-
-ok as Articulation Bridges template?
