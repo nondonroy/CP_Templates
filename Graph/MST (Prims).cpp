@@ -28,3 +28,5 @@ int prims(int n, vector<vector<pair<int, int>>> &adj) {
 
     return tmst;
 }
+// adj: first -> node , second -> wt
+// pq: first -> wt , seconf -> node
