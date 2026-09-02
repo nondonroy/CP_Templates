@@ -7,6 +7,9 @@ using namespace std;
 using namespace __gnu_pbds;
 
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds; // find_by_order, order_of_key
+// for multiset use pair with index
+// lower_bound({x, -INF})
+// upper_bound({x, INF})
 
 int main() {
 	pbds A; // declaration
