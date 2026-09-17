@@ -1,3 +1,6 @@
+#define ll long long int
+const ll INF = 1e15;
+
 vector<ll> bellmanFord(ll source, vector<vector<ll>> &edges) {
     vector<ll> dist(n + 1, INF);
 
