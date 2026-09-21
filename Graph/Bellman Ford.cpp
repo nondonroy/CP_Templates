@@ -22,6 +22,7 @@ vector<ll> bellmanFord(ll source, vector<vector<ll>> &edges) {
 
     return dist;
 }
+//SPSP - worked in negative edges
 // O(VE)
 /* in n'th iteration if the distance reduced then
 there exist negative cycle */
