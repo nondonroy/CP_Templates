@@ -1,8 +1,5 @@
-#define ll long long int
-#define endl '\n'
 #define pb push_back
-
-void dfs(ll node, vector<ll> &vis, stack<ll> &st, vector<vector<ll>> &adj) {
+void dfs(int node, vector<int> &vis, stack<int> &st, vector<vector<int>> &adj) {
 
     vis[node] = 1;
     for(auto it : adj[node]) {
@@ -14,18 +11,18 @@ void dfs(ll node, vector<ll> &vis, stack<ll> &st, vector<vector<ll>> &adj) {
     st.push(node);
 }
 
-vector<ll> topSort(ll n, vector<vector<ll>> &adj) {
+vector<int> topSort(int n, vector<vector<int>> &adj) {
 
-    vector<ll> vis(n + 1, 0);
-    stack<ll> st;
+    vector<int> vis(n + 1, 0);
+    stack<int> st;
 
-    for(ll i = 1; i <= n; i++) {
+    for(int i = 1; i <= n; i++) {
         if(!vis[i]) {
             dfs(i, vis, st, adj);
         }
     }
 
-    vector<ll> ans;
+    vector<int> ans;
 
     while(!st.empty()) {
         ans.pb(st.top());
