@@ -1,4 +1,4 @@
-const int N = 1e6 + 5;
+const int N = 1e7 + 5;
 vector<bool> isPrime(N, true);
 
 void sieve() {
