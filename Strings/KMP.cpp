@@ -1,6 +1,6 @@
 // Longest Proper Prefix which is also a Suffix
 
-vector<int> prefix_function(string &s) {
+vector<int> KMP(string &s) {
   int n = (int)s.length();
   vector<int> pi(n);
   for (int i = 1; i < n; i++) {
