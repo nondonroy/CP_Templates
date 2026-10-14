@@ -1,4 +1,4 @@
-const int N = 1e7 + 5;
+const int N = 1e7 + 5; // total primes 664579
 vector<bool> isPrime(N, true);
 
 void sieve() {
