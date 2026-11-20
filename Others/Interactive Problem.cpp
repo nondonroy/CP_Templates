@@ -11,7 +11,7 @@ void solve() {
     cout << "? 1 " << n << endl; // querry
     
     ll x;
-    cin >> x; // input jusge ans
+    cin >> x; // input judge ans
     if(x == -1) exit(0); // exit immedietly
     if(x == n || x == 0) {
         cout << "! NO" << endl;  // ouput my ans
